@@ -1,38 +1,115 @@
-.App {
+body {
+  font-size: 16px;
+}
+.Wrapper_Div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.MainView {
+  width: 500px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1%;
+  border-radius: 0.75rem;
+  height: 300px;
+  background-color: rgb(190, 190, 190);
+}
+.Header {
+  font-size: 24px;
+}
+.messages {
+  height: 80%;
+  display: flex;
+  width: 90%;
+}
+.messageBox {
+  width: 95%;
+}
+
+.messageInput {
+  width: 70%;
+  justify-self: baseline;
+  margin-bottom: 10px;
+  height: 20px;
+  border-radius: 0.25rem;
+  border: 0px solid wheat;
+}
+.messageInput:focus {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+button {
+  width: 25%;
+  outline: none;
+  border: none;
+  padding: 4px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.profileBox {
+  width: 90%;
+  display: flex;
+}
+
+.profilePic {
+  height: 50px;
+  background-color: rgb(136, 136, 136);
+  width: 50px;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+.nameAndMessage p {
+  margin: unset;
+}
+
+.nameBox {
+  margin-bottom: 7px;
+}
+.Name {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.isTyping {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.WelcomePage p {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.WelcomePage span {
+  font-size: 16px;
+}
+
+.WelcomePage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.joinedEvent {
+  color: gray;
+  font-size: 10px;
 }
